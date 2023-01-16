@@ -1,3 +1,7 @@
+## Acknowledgement
+This work is based on the flower example given in https://github.com/adap/flower/tree/main/examples/quickstart_tensorflow
+
+
 # Flower Example using TensorFlow/Keras
 
 This introductory example to Flower uses Keras but deep knowledge of Keras is not necessarily required to run the example. However, it will help you understanding how to adapt Flower to your use-cases.
@@ -8,10 +12,10 @@ Running this example in itself is quite easy.
 Start by cloning the example project. We prepared a single-line command that you can copy into your shell which will checkout the example for you:
 
 ```shell
-git clone --depth=1 https://github.com/adap/flower.git && mv flower/examples/quickstart_tensorflow . && rm -rf flower && cd quickstart_tensorflow
+git clone --depth=1 https://github.com/dimalkavindu/flwr-tensor-flow-basic.git && cd flwr-tensor-flow-basic
 ```
 
-This will create a new directory called `quickstart_tensorflow` containing the following files:
+This will create a new directory called `flwr-tensor-flow-basic` containing the following files:
 
 ```shell
 -- pyproject.toml
