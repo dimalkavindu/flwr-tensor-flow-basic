@@ -1,0 +1,12 @@
+#!/bin/bash
+
+for i in `seq 0 1`; do
+    echo "Starting client $i"
+    python client.py &
+    sleep 3  # Sleep for 3s to give the client enough time to start
+done
+
+# This will allow you to use CTRL+C to stop all background processes
+trap "trap - SIGTERM && kill -- -$$" SIGINT SIGTERM
+# Wait for all background processes to complete
+wait
